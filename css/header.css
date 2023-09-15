@@ -1,0 +1,138 @@
+:root{
+    --main-color: #114358;
+    --color-complement: #f2aa1f;
+    --color-subcomplement:#f1ece7;
+    --dark-color:#090909;
+    --gray-color:#d9d9d9;
+    --title-font-size: 2rem;
+    --description-font-size:1.2rem;
+    --background-hover:rgb(5, 28, 56);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+/*Start Header Code*/
+header{
+    width: 100%;
+    background-color:var(--main-color);
+    height: 80px;
+    position: fixed;
+    top: 0;
+    border-bottom: 2px solid var(--gray-color);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    line-height: 80px;
+}
+
+.inner-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    width: 100%;
+}
+
+.container_logo a{
+    color: var(--color-subcomplement);
+    margin-left: 40px;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.container_logo a:hover{
+    color: var(--color-complement);
+    transition: .3s;
+}
+
+.navbar ul li{
+    display: inline-block;
+}
+
+ul li a{
+    color: var(--color-subcomplement);
+    font-size: 1.1rem;
+    margin: 0 20px;
+    letter-spacing: 1px;
+}
+
+.lists li a:hover{
+    color: var(--color-complement);
+    transition: .3s;
+    text-decoration: underline;
+}
+
+.scroll-transition {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 2s, transform 2s;
+}
+
+.scroll-transition.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.toggle {
+    position: absolute;
+    right: 20px;
+    color: var(--color-subcomplement);
+    margin-right: 20px;
+    font-size: 30px;
+    transform: rotate(90deg);
+    cursor: pointer;
+    transition: .3s;
+    display: none;
+}
+
+.rotate{
+    transform: rotate(180deg);
+}
+
+.expanded {
+    height: fit-content;
+    transition: .5s; 
+}
+
+.push-content {
+    margin-top: calc(60vh); 
+    transition: .5s; 
+}
+
+
+
+@media screen and (max-width: 720px){
+    .toggle {
+        display: inline-block;
+    }
+
+    .lists {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background: var(--main-color);
+        text-align: center;
+        width: 100%;
+        z-index: 1;
+        top: -100vh;
+        left: 0;
+        transition: .5s;
+    }
+
+    .active {
+        top: 80px;
+    }
+
+    .lists li:hover {
+        background: #051c38;
+    }  
+}
+/*End Header Code*/
