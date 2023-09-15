@@ -1,0 +1,83 @@
+/*Start Media Query for Main Section*/
+
+    .main__section_box1 h1{
+        margin-top: 20px;
+        font-size: 4rem;
+    }
+    
+    .main__section_box1 p{
+        margin-top: 20px;
+        font-size: 2rem;
+    }
+    
+    .main__section_box2 p{
+        font-size: 1.5rem;
+    }
+    
+    .box2__tech{
+        width: 100%;
+        margin-top: 30px;
+    }
+    
+    .box2__tech i{
+        width: 100px;
+        font-size: 4rem;
+    }
+
+/*End Media Query for Main Section*/
+
+/*Start Media Query for About Me Section*/
+
+.section__aboutme{
+    max-width: 1100px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row; 
+    flex-wrap: nowrap;
+}
+
+.aboutme__box1{
+    width: 40%;
+}
+
+.aboutme__box2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width:60%;
+}
+
+hr{
+    width: 70%;
+}
+
+/*End Media Query for About Me Section*/
+
+
+/*Start Media Query for Portfolio Section*/
+
+.portfolio__projects{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 50px;
+    max-width: 1100px;
+}
+
+button{
+    margin-top: 10px;
+}
+
+/*End Media Query for Portfolio Section*/
+
+/*Start Media Query for Footer Section - First Widget*/
+
+.footer__widget{
+    display: flex;
+    flex-direction: row;
+    align-items:baseline;
+}
+
+/*End Media Query for Footer Section - Second Widget*/

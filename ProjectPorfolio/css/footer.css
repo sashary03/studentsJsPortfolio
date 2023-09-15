@@ -1,0 +1,114 @@
+:root{
+    --main-color: #114358;
+    --color-complement: #f2aa1f;
+    --color-subcomplement:#f1ece7;
+    --dark-color:#090909;
+    --gray-color:#d9d9d9;
+    --title-font-size: 2rem;
+    --description-font-size:1.2rem;
+}
+
+
+/*Start First Widget of Footer*/
+
+.footer__widget{
+    width: 100%;
+    height: auto;
+    background-color: var(--gray-color);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.widget__aboutweb, .widget__menu, .widget__contact{
+    width: 400px;
+}
+
+.widget__aboutweb a{
+    font-size: 1.5rem;
+    color: var(--main-color);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.widget__aboutweb p{
+    margin-top: 20px;
+}
+
+.widget__aboutweb a:hover{
+    color: var(--color-complement);
+}
+
+.widget__menu, .widget__contact{
+    margin-top: 30px;
+}
+
+.widget__menu h3{
+    font-size: 1.5rem;
+    color: var(--main-color);
+    margin-bottom: 20px;
+}
+
+.widget__menu ul, .widget__contact ul{
+    list-style: none;
+}
+
+.widget__menu ul li a{
+    color: var(--dark-color);
+    margin-bottom: 10px;
+}
+
+.widget__menu ul li, .widget__contact ul li{
+    margin-bottom: 5px;
+}
+
+.widget__menu ul li a:hover{
+    color: var(--color-complement);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.widget__contact h3{
+    font-size: 1.5rem;
+    color: var(--main-color);
+    margin-bottom: 20px;
+}
+
+/*End First Widget of Footer*/
+
+/*Start Second Widget of Footer*/
+
+.footer__politics{
+    width: 100%;
+    background-color: var(--gray-color);
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    padding: 0 40px 40px 40px;
+    text-align: center;
+}
+
+.footer__politics a{
+    margin-top: 10px;
+    color: var(--main-color);
+}
+
+.nixweb{
+   color: var(--main-color);
+}
+
+.nixweb:hover{
+    color:var(--color-complement);
+}
+
+.footer__politics a:hover{
+    color: var(--color-complement);
+    cursor: pointer;
+    transition: .3s;
+}
+
+/*End Second Widget of Footer*/
