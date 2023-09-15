@@ -1,0 +1,256 @@
+:root{
+    --main-color: #114358;
+    --color-complement: #f2aa1f;
+    --color-subcomplement:#f1ece7;
+    --dark-color:#090909;
+    --gray-color:#d9d9d9;
+    --title-font-size: 2rem;
+    --description-font-size:1.2rem;
+    --background-hover:#051c38;
+}
+
+/*Start Main Section*/
+.main__section{
+    background-color: var(--main-color);
+    padding: 60px;
+    width: 100%;
+    height: auto;
+    margin-top: 80px;
+}
+
+.main__section_box1{
+    text-align: center;
+}
+
+.main__section_box1 h1{
+    color: var(--color-complement);
+    font-size: 3.2rem;
+    padding-top: 25px;
+}
+
+.main__section_box1 p{
+    color: var(--color-subcomplement);
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+.main__section_box2{
+    margin-top: 40px;
+    text-align: center;
+}
+
+.main__section_box2 p{
+    font-size: 1.3rem;
+    color: var(--color-complement);
+}
+
+.box2__tech{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.box2__tech i{
+    width: 80px;
+    font-size: 3.5rem;
+}
+
+.box2__tech i:hover{
+    --webkit-filter:var(--color-complement);
+    cursor: pointer;
+    transition: .3s;
+}
+
+/*End Main Section*/
+
+/*Start About Me Section*/
+
+.section__aboutme{
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column; 
+}
+
+.aboutme__box1 .aboutme__box2{
+    width: 50%;
+}
+
+.aboutme__box2{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+.aboutme__box1 img{
+    display: flex;
+    margin: 0 auto;
+    width: 250px;
+    height: auto;
+}
+
+.aboutme__box2 h2{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2rem;
+    color: var(--main-color);
+}
+
+hr{
+    width: 70%;
+    border: 2px solid var(--color-complement);
+}
+
+.aboutme__box2 p{
+    margin-top: 20px;
+    font-size: var(--description-font-size);
+    text-align: center;
+}
+
+/*End About Me Section*/
+
+/*Start Portfolio Section*/
+
+.section__portfolio{
+    background-color: var(--gray-color);
+    padding: 40px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.section__portfolio h2{
+    font-size: var(--title-font-size);
+    color: var(--main-color);
+}
+
+.portfolio__projects{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    max-width: 500px;
+}
+
+.project img{
+    margin-top: 40px;
+    width: 300px;
+    height: auto;
+}
+
+.project h3{
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: var(--main-color);
+}
+
+.project p{
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.projects__buttons{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.projects__buttons button{
+    width: 200px;
+    height: 40px;
+    background-color: var(--main-color);
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+    outline: none;
+}
+
+button a{
+    color: var(--color-subcomplement);
+    margin-left: 5px;
+    font-weight: 300;
+}
+
+
+button a:hover{
+    color: var(--main-color);
+}
+
+.projects__buttons button:hover{
+   background-color: var(--color-complement);
+   color: var(--main-color);
+   cursor: pointer;
+   transition: .3s;
+}
+
+/*End Portfolio Section*/
+
+/*Start Contact Section*/
+
+.section__contact{
+    width: 100%;
+    height: auto;
+    background-color: var(--main-color);
+    padding: 50px;
+}
+
+.contact__form{
+    background-color: rgba(5, 28, 56, 1);
+    border: 2px solid var(--color-subcomplement);
+    border-radius: 5px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.contact__form h2{
+    font-size: var(--title-font-size);
+    color: var(--color-subcomplement);
+    text-align: center;
+}
+
+label{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: var(--color-subcomplement);
+}
+
+input{
+    width: 100%;
+    height: 40px;
+    padding: 20px;
+    outline: none;
+}
+
+textarea{
+    padding: 20px;
+    max-width: 100%;
+    max-height: 150px;
+    outline: none;
+}
+
+.form__button{
+    margin-top: 30px;
+    background-color: var(--color-complement);
+    width: 100%;
+    height: 40px;
+    color: var(--main-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 1px solid;
+    border-radius: 5px;
+    outline: none;
+    line-height: 5px;
+}
+
+.form__button:hover{
+    background-color: var(--main-color);
+    color: var(--color-subcomplement);
+    cursor: pointer;
+    transition: .3s;
+}
+
+/*End Contact Section*/
